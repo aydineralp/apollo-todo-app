@@ -1,12 +1,59 @@
-# React + Vite
+📌 Apollo To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React To-Do Application built as part of the Apollo Green Solutions assignment.
+Features user authentication (demo, via localStorage), project management, and task management.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+User accounts (demo auth): Register, login, logout (data stored in localStorage).
 
-## Expanding the ESLint configuration
+Projects: Create, rename, delete projects.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tasks: Add, edit, complete, delete tasks with due date and priority.
+
+Import/Export: Backup and restore data via JSON file.
+
+Responsive UI with a clean layout.
+
+⚙️ Tech Stack
+
+React
+ (Vite + JSX)
+
+LocalStorage for persistence
+
+Tailwind CSS
+ (for styling)
+
+Minimal dependencies (no backend required)
+
+📂 Getting Started
+1. Clone the repository
+git clone https://github.com/<your-username>/apollo-todo-app.git
+cd apollo-todo-app
+
+2. Install dependencies
+npm install
+
+3. Run the app
+npm run dev
+
+
+Then open http://localhost:5173
+ in your browser.
+
+📦 Build for production
+npm run build
+
+
+The production build will be available in the dist/ folder.
+
+📖 Notes
+
+This app is a demo; no real backend is connected.
+
+All user data is saved in the browser’s localStorage. Clearing site data will reset it.
+
+👤 Author
+
+Assignment completed by Veysel Aydın Eralp for Apollo Green Solutions.
