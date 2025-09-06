@@ -1,8 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 
-/** ApolloGS – Minimal React To-Do (no extra deps) **/
 
-// ---- LocalStorage helpers ----
+
 const LS_KEYS = {
   USERS: "apollogs.users:v1",
   SESS: "apollogs.session:v1",
@@ -38,7 +37,7 @@ if (!u || u.passwordHash !== hash(pw)) throw new Error("Incorrect email or passw
   return { session, register, login, logout: () => setSession(null) };
 }
 
-// ---- Per-user data (projects + tasks) ----
+
 function useUserData(session) {
   const [all, setAll] = useLocalStorage(LS_KEYS.DATA, {});
   const email = session?.email;
@@ -207,7 +206,7 @@ function TaskBoard({ project, tasks, onAdd, onToggle, onUpdate, onDelete }) {
 }
 
 
-// ---- App root ----
+
 export default function App() {
   const { session, register, login, logout } = useAuth();
   const { data, createProject, renameProject, deleteProject, addTask, updateTask, deleteTask } = useUserData(session);
