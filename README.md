@@ -11,7 +11,6 @@ Projects: Create, rename, delete projects.
 
 Tasks: Add, edit, complete, delete tasks with due date and priority.
 
-Import/Export: Backup and restore data via JSON file.
 
 Responsive UI with a clean layout.
 
